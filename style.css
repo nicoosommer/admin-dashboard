@@ -1,0 +1,48 @@
+@import url("https://fonts.googleapis.com/css2?family=Caprasimo&family=Poppins:wght@500&display=swap");
+
+html,
+*,
+:root {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  --filter-color: invert(100%) sepia(100%) saturate(2%) hue-rotate(37deg)
+    brightness(113%) contrast(101%);
+}
+.container {
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 1fr 5fr;
+}
+.left-side {
+  grid-column: 1 / span 1;
+  grid-row: 1;
+  padding: 20px 30px;
+  display: grid;
+  grid-template-rows: 1fr 3fr 2fr 5fr;
+  background-color: rgb(50, 194, 241);
+  font-family: "Poppins", sans-serif;
+  color: white;
+}
+.left-side ul {
+  list-style-type: none;
+  font-size: larger;
+}
+.title {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  justify-content: start;
+  align-content: start;
+}
+.title .logo img {
+  height: 50px;
+  filter: var(--filter-color);
+}
+.title .logo-txt {
+  display: grid;
+  align-content: center;
+  font-size: x-large;
+}
+.left-side .menu-bar ul li {
+  padding: 5px 0px;
+}
