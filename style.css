@@ -19,18 +19,18 @@ html,
   grid-row: 1;
   padding: 20px 30px;
   display: grid;
-  grid-template-rows: 1fr 3fr 2fr 5fr;
-  background-color: rgb(50, 194, 241);
+  grid-template-rows: 1fr 3fr 2fr 2fr;
+  background-color: rgb(47, 87, 100);
   font-family: "Poppins", sans-serif;
   color: white;
 }
 .left-side ul {
   list-style-type: none;
-  font-size: larger;
+  font-size: large;
 }
 .title {
   display: grid;
-  grid-template-columns: 1fr 2fr;
+  grid-template-columns: 1fr 3fr;
   justify-content: start;
   align-content: start;
 }
@@ -43,6 +43,20 @@ html,
   align-content: center;
   font-size: x-large;
 }
-.left-side .menu-bar ul li {
+.left-side .menu-bar ul li,
+.left-side .settings-bar ul li {
   padding: 5px 0px;
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+  align-items: center;
+}
+.left-side .menu-bar ul li img,
+.left-side .settings-bar ul li img {
+  height: 40px;
+  filter: var(--filter-color);
+}
+.left-side .menu-bar ul li:hover,
+.left-side .settings-bar ul li:hover {
+  opacity: 0.6;
+  cursor: pointer;
 }
