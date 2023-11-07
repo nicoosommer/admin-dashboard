@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Caprasimo&family=Poppins:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
 
 html,
 *,
@@ -59,4 +60,47 @@ html,
 .left-side .settings-bar ul li:hover {
   opacity: 0.6;
   cursor: pointer;
+}
+
+/* RIGHT SIDE */
+.right-side {
+  display: grid;
+  grid-template-rows: 1fr 5fr;
+  font-family: "roboto", sans-serif;
+}
+.right-side header {
+  background-color: rgb(202, 202, 207);
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  grid-template-rows: 1fr 2fr;
+  padding: 20px 50px;
+}
+.upper-left {
+  display: flex;
+  gap: 10px;
+  align-items: start;
+}
+.search-icon {
+  height: 30px;
+}
+.search-bar {
+  background-color: rgb(182, 176, 176);
+  border: none;
+  border-radius: 10px;
+  height: 30px;
+  min-width: 70%;
+  padding: 0px 10px;
+  color: rgb(0, 0, 0);
+}
+.search-bar:focus-visible {
+  outline: none;
+}
+.lower-left {
+  display: grid;
+  grid-template-columns: 1fr 9fr;
+  align-items: center;
+  margin-top: 5px;
+}
+.lower-left img {
+  height: 80px;
 }
