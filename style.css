@@ -11,16 +11,16 @@ html,
     brightness(113%) contrast(101%);
 }
 .container {
-  height: 100vh;
+  height: 100%;
   display: grid;
   grid-template-columns: 1fr 5fr;
 }
 .left-side {
-  grid-column: 1 / span 1;
-  grid-row: 1;
+  height: 100vh;
+  grid-column: 1;
   padding: 20px 30px;
   display: grid;
-  grid-template-rows: 1fr 3fr 2fr 2fr;
+  grid-template-rows: 1fr 2fr 2fr;
   background-color: rgb(47, 87, 100);
   font-family: "Poppins", sans-serif;
   color: white;
@@ -64,6 +64,7 @@ html,
 
 /* RIGHT SIDE */
 .right-side {
+  max-height: 100vh;
   display: grid;
   grid-template-rows: 1fr 5fr;
   font-family: "roboto", sans-serif;
@@ -97,10 +98,53 @@ html,
 }
 .lower-left {
   display: grid;
-  grid-template-columns: 1fr 9fr;
+  grid-template-columns: 100px 1fr;
   align-items: center;
   margin-top: 5px;
 }
 .lower-left img {
   height: 80px;
+}
+.upper-right {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+.notification {
+  justify-self: end;
+}
+.notification img {
+  height: 30px;
+}
+.profile {
+  display: grid;
+  grid-template-columns: 50px 1fr;
+  align-items: center;
+  gap: 20px;
+}
+.profile img {
+  height: 50px;
+}
+.lower-right {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  align-items: center;
+  justify-items: center;
+}
+.lower-right input {
+  height: max-content;
+  width: min-content;
+  padding: 10px 30px;
+  border: none;
+  border-radius: 20px;
+  background-color: rgb(15, 133, 212);
+  color: white;
+  font-size: medium;
+}
+.lower-right input:hover {
+  cursor: pointer;
+  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+  opacity: 0.9;
 }
