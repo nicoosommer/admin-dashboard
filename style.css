@@ -72,7 +72,7 @@ html,
   font-family: "roboto", sans-serif;
 }
 .right-side header {
-  background-color: rgb(202, 202, 207);
+  background-color: rgb(245, 239, 239);
   display: grid;
   grid-template-columns: 2fr 1fr;
   grid-template-rows: 1fr 2fr;
@@ -155,12 +155,12 @@ html,
 main {
   display: grid;
   grid-template-columns: 3fr 1fr;
+  background-color: rgb(145, 142, 142);
 }
 .projects-section {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  grid-template-rows: 50px;
-  padding: 0px 0px 0px 30px;
+  grid-template-rows: 50px max-content;
+  padding-left: 30px;
   gap: 20px;
 }
 .projects-section h3 {
@@ -169,11 +169,58 @@ main {
   justify-self: start;
   margin: 5px;
 }
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 50px;
+}
 .card {
   height: 200px;
   width: 300px;
   background-color: aquamarine;
   border: 2px solid black;
   border-radius: 10px;
-  border-right: 10px solid blue;
+  border-left: 10px solid blue;
+}
+.cards-section {
+  display: grid;
+  grid-template-rows: 50px 400px 50px max-content;
+  padding-right: 20px;
+  gap: 20px;
+}
+.cards-section h3 {
+  align-self: end;
+}
+.announ-card,
+.trending-card {
+  width: 300px;
+  height: max-content;
+  background-color: white;
+  padding: 30px;
+  border-radius: 10px;
+  display: grid;
+  gap: 15px;
+}
+.new {
+  padding-bottom: 10px;
+  margin: 5px;
+  font-size: 13px;
+  border-bottom: 1px solid rgb(194, 190, 190);
+}
+.new h4 {
+  font-size: 15px;
+}
+.trending-txt {
+  align-self: end;
+  max-height: 50px;
+}
+.profiles {
+  display: grid;
+  grid-template-columns: 60px 1fr;
+}
+.profiles .imagen {
+  height: 45px;
+}
+.trending-card {
+  max-height: max-content;
 }
